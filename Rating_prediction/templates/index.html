@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='analyze.css') }}">
+  <title>Pharma Review Analyzer</title>
+</head>
+<body>
+  <script src="main.js"></script>
+
+  <div class="navbar">
+    <div class="icon">
+      <h2 class="logo">Pharma Review Analyzer</h2>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="../HOMEpage/home.html">HOME</a></li>
+        <li><a href="../ABOUTpage/about.html">ABOUT</a></li>
+        <li><a href="../CONTACTpage/contact_us.html">CONTACTUS</a></li>
+        <li><a href="../TYPESpage/types.html">CONDITIONS</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="review-form">
+    <h2>Write your review</h2>
+    <form id="reviewForm" action="/predict" method="post">
+        <div class="write-review">
+            <textarea id="reviewTextarea" name="review" rows="4" cols="50"></textarea><br>
+        </div>
+        <button type="submit" class="submit-button">Analyze</button>
+    </form>
+    {% if sentiment %}
+    <div class="sentiment-result">
+        <h3>Sentiment: {{ sentiment }}</h3>
+    </div>
+    {% endif %}
+  </div>
+</body>
+</html>

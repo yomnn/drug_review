@@ -1,0 +1,151 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: transparent; 
+  width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0, 0, 0, 0.5)50%), url("ko50f8527x.jpg") no-repeat center center fixed ;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.review-form {
+  background-color: rgba(255, 255, 204, 0.7); 
+  padding: 20px;
+  border: 2px solid #3498DB; 
+  border-radius: 10px;
+  text-align: center;
+  position: fixed;
+  top: 220px; 
+  left: 200px; 
+}
+
+h2 {
+  color: #333;
+}
+
+.write-review {
+  margin-bottom: 20px;
+}
+
+.custom-write-review {
+  border: 2px solid #3498DB; 
+  color: #3498DB; 
+  background-color: transparent; 
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.custom-write-review:hover {
+  background-color:#3498DB; 
+  color: #fff; 
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.submit-button {
+  background-color: #3498DB; 
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #3498DB; 
+}
+
+  
+
+
+.navbar{
+  width: 1200px;
+  height: 75px;
+  margin: auto;
+}
+
+.icon{
+  width: 200px;
+  float: left;
+  height: 70px;
+}
+
+.logo{
+  color:#fff
+  ;
+  font-size: 35px;
+  font-family: Arial;
+  padding-left: 20px;
+  float: left;
+  padding-top: 10px;
+  margin-top: 5px
+}
+.menu{
+  width: 400px;
+  float: left;
+  height: 70px;
+}
+
+ul{
+  float: left;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+ul li{
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 14px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+  color: #3498DB;
+}
+
+
+
+
+ul li ul {
+display: none;
+position: absolute;
+background-color: rgb(117, 117, 110);
+
+}
+
+ul li ul li {
+
+padding: 5px 16px;
+margin: 10px ;
+}
+
+ul li:hover ul{
+  display: block;
+}
+  
+.type-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.type-link:hover {
+  color: #3498DB;
+}
+
